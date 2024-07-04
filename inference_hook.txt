@@ -1,0 +1,6 @@
+{"project_name":"demo-test","PostInferenceHook":{"trigger":{"AlwaysTrigger":{}},
+"action":{"HttpRequestAction":
+ {"url":"http://edge-demo-app.default/inference_ingest",
+  "method":"POST",
+  "include_prediction_data": true}},
+ "max_threads":5,"limit_action_rate":true,"max_frames_per_second":1,"queue_limit":15}}
